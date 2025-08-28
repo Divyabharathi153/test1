@@ -1,0 +1,88 @@
+/* Reset default margin/padding */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: yellowgreen;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+/* Form styling */
+form {
+  background-color: lightcoral !important;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* GAP between all form elements */
+}
+
+/* Input and select fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+   gap: 15px; /* GAP between all form elements */
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Submit button */
+button[type="submit"] {
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Message (e.g., error/success) */
+.message {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
